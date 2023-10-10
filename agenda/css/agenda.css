@@ -1,3 +1,5 @@
+/* Adicione isso no seu arquivo css/style.css */
+
 :root {
   --cor-azul-escuro: #160066;
   --cor-branco: #ffffff;
@@ -7,20 +9,23 @@
   --cor-azul-claro2: #4585A8;
 }
 
-
 body {
   font-family: Arial, sans-serif;
-  background: var(--cor-branco);
+  background: var(--cor-rosa-claro);
   color: var(--cor-azul-escuro);
   margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 header {
   max-width: 100%;
-  background: var(--cor-rosa-claro);
+  margin: 0 auto;
+  background: var(--cor-branco);
   color: var(--cor-azul-claro);
   padding: 20px;
   text-align: center;
+  border-radius: 10px 10px 0 0;
 }
 
 header h1 {
@@ -28,9 +33,14 @@ header h1 {
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
+  background: var(--cor-branco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
 }
 
 label {
@@ -41,11 +51,12 @@ label {
 }
 
 input, select {
-  width: 100%;
+  width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid var(--cor-cinza-claro);
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 button {
@@ -67,9 +78,9 @@ footer {
   color: var(--cor-branco);
   padding: 10px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  max-width: 100%;
+  margin: 20px auto 0;
+  border-radius: 0 0 10px 10px;
 }
 
 @media (max-width: 600px) {
@@ -77,21 +88,12 @@ footer {
     font-size: 1.5rem;
   }
 
-  .container {
-    padding: 10px;
-  }
-
   input, select {
+    width: calc(100% - 10px);
     padding: 5px;
   }
 
   button {
     padding: 5px 10px;
   }
-
-  footer {
-    padding: 10px;
-  }
-
-
 }
