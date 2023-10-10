@@ -1,0 +1,45 @@
+.introducao {
+    background: url('../imagens/pexels-spencer-selover-428321.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    max-width: 100%;
+}
+
+.container-introducao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container-introducao h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-introducao p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 950px) {
+    .introducao {
+        background-size: cover;
+        background-position: center;
+    }
+    .container-introducao h1 {
+        font-size: 2rem;
+    }
+
+    .container-introducao p {
+        font-size: 1rem;
+    }
+}
