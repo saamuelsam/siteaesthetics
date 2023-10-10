@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../agenda/css/agenda.css">
+  <title>Agendamento de Horários e Serviços</title>
+</head>
+<body>
+  <header>
+    <h1>Agendamento de Horários e Serviços</h1>
+  </header>
+
+  <main class="container">
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="servico">Escolha o serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="" disabled selected>Selecione um serviço</option>
+        <option value="limpeza">Limpeza de Pele</option>
+        <option value="hidratacao">Design de Sobrancelhas</option>
+        <option value="hidratacao">Depilação</option>
+        <option value="hidratacao">Revitalização Facial</option>
+        <option value="hidratacao">Tratamentos Faciais</option>
+        <option value="hidratacao">Massagem Relaxante</option>
+        <option value="hidratacao">Detox Corporal</option>
+        <option value="hidratacao">Tratamento para redução de medidas</option>
+      
+      </select>
+
+      <label for="horario">Escolha o horário:</label>
+      <input type="datetime-local" id="horario" name="horario" required>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Mylenne Beauty - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
