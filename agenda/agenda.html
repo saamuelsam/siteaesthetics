@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../agenda/css/agenda.css">
   <title>Agendamento de Horários e Serviços</title>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '244855364578115');
+    fbq('trackCustom', 'pagina-de-agendamento');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=244855364578115&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
+
 <body>
   <header>
     <h1>Agendamento de Horários e Serviços</h1>
@@ -33,7 +53,7 @@
         <option value="hidratacao">Massagem Relaxante</option>
         <option value="hidratacao">Detox Corporal</option>
         <option value="hidratacao">Tratamento para redução de medidas</option>
-      
+
       </select>
 
       <label for="horario">Escolha o horário:</label>
@@ -47,4 +67,5 @@
     <p>&copy; 2023 Mylenne Beauty - Todos os direitos reservados.</p>
   </footer>
 </body>
+
 </html>
